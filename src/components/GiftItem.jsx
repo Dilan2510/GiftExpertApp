@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 export const GiftItem = ({ img, title }) => {
   return (
     <div className="card">
@@ -5,4 +7,9 @@ export const GiftItem = ({ img, title }) => {
       <h5>{title}</h5>
     </div>
   );
+};
+
+GiftItem.propTypes = {
+  title: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired,
 };
